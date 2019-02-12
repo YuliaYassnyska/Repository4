@@ -25,7 +25,13 @@ public Camera(String NameOfTheManufacturer, double memoryCapacity, int multiplic
 	this.color = color;
 }
 
-public Camera(String NameOfTheManufacturer, double memoryCapacity, int multiplicity_of_zoom, int color, int price, int ID, int battery_capacity, int warranty_period) {
+public Camera(String NameOfTheManufacturer, 
+		double memoryCapacity, 
+		int multiplicity_of_zoom, 
+		int color, 
+		int price, 
+		int battery_capacity, 
+		int warranty_period) {
 	this (NameOfTheManufacturer, memoryCapacity, multiplicity_of_zoom, color);
 	this.price = price;
 	this.battery_capacity = battery_capacity;
@@ -36,67 +42,68 @@ public String getNameOfTheManufacturer() {
 	return NameOfTheManufacturer;
 }
 
-public void setNameOfTheManufacturer(String manufactorer) {
-	this.NameOfTheManufacturer = manufactorer;
+public void setNameOfTheManufacturer(String NameOfTheManufacturer) {
+	this.NameOfTheManufacturer = NameOfTheManufacturer;
 }
 
 public double getMemoryCapacity(){
 	return memoryCapacity;
 }
 
-public void setMemoryCapacity(double capacity) {
-	this.memoryCapacity = capacity;
+public void setMemoryCapacity(double memoryCapacity) {
+	this.memoryCapacity = memoryCapacity;
 }
 
 public int getMultiplicity_of_zoom() {
 	return multiplicity_of_zoom;
 }
 
-public void setMultiplicity_of_zoom(int zoom) {
-	this.multiplicity_of_zoom = zoom;
+public void setMultiplicity_of_zoom(int multiplicity_of_zoom) {
+	this.multiplicity_of_zoom =multiplicity_of_zoom;
 }
 
 public int getColor() {
 	return color;
 }
 
-public void setColor(int colorr) {
-	this.color = colorr;
+public void setColor(int color) {
+	this.color = color;
 }
 
 public int getPrice() {
 	return price;
 }
 
-public void setPrice(int price1) {
-	this.price = price1;
+public void setPrice(int price) {
+	this.price = price;
 }
 
 public int getBattery_capacity() {
     return battery_capacity;
 }
 
-public void setBattery_capacity(int battery) {
-    this.battery_capacity = battery;
+public void setBattery_capacity(int battery_capacity) {
+    this.battery_capacity = battery_capacity;
 }
-
+ 
 public int getWarranty_period() {
     return warranty_period;
 }
-
-public void setWarranty_period(int period) {
-    this.warranty_period = period;
+ 
+public void setWarranty_period(int warranty_period) {
+    this.warranty_period = warranty_period;
 }
 
 public String toString() {
-	System.out.println("***************************** \n Name Of The Manufacturer: "+ NameOfTheManufacturer);
-	System.out.println("\n Memory Capacity: "+ memoryCapacity);
-	System.out.println("\n Multiplicity of zoom: "+ multiplicity_of_zoom);
-	System.out.println("\n Color: "+ color);
-	System.out.println("\n Price: "+ price);
-	System.out.println("\n Battery Capacity: "+ battery_capacity);
-	System.out.println("\n Warranty Period: "+ warranty_period);
-	return "String";
+	String info = "\n ********************";
+	info += "\n Name Of The Manufacturer: "+ NameOfTheManufacturer;
+	info += "\n Memory Capacity: "+ memoryCapacity;
+	info += "\n Multiplicity of zoom: "+ multiplicity_of_zoom;
+	info += "\n Color: "+ color;
+	info += "\n Price: "+ price;
+	info += "\n Battery Capacity: "+ battery_capacity;
+	info += "\n Warranty Period: "+ warranty_period;
+	return info;
 	
 }
 
