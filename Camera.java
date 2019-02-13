@@ -4,38 +4,38 @@ class Camera {
 
 private String NameOfTheManufacturer;
 private double memoryCapacity;
-private int multiplicity_of_zoom;
+private int multiplicityOfZoom;
 
 private int color;
 private int price;
 
 private static int ID = 2;
 
-protected int battery_capacity;
-protected int warranty_period;
+protected int batteryCapacity;
+protected int warrantyPeriod;
 
 public Camera() {
 
 }
 
-public Camera(String NameOfTheManufacturer, double memoryCapacity, int multiplicity_of_zoom, int color) {
+public Camera(String NameOfTheManufacturer, double memoryCapacity, int multiplicityOfZoom, int color) {
 	this.NameOfTheManufacturer = NameOfTheManufacturer;
 	this.memoryCapacity = memoryCapacity;
-	this.multiplicity_of_zoom = multiplicity_of_zoom;
+	this.multiplicityOfZoom = multiplicityOfZoom;
 	this.color = color;
 }
 
 public Camera(String NameOfTheManufacturer, 
 		double memoryCapacity, 
-		int multiplicity_of_zoom, 
+		int multiplicityOfZoom, 
 		int color, 
 		int price, 
-		int battery_capacity, 
-		int warranty_period) {
-	this (NameOfTheManufacturer, memoryCapacity, multiplicity_of_zoom, color);
+		int batteryCapacity, 
+		int warrantyPeriod) {
+	this (NameOfTheManufacturer, memoryCapacity, multiplicityOfZoom, color);
 	this.price = price;
-	this.battery_capacity = battery_capacity;
-	this.warranty_period = warranty_period;
+	this.batteryCapacity = batteryCapacity;
+	this.warrantyPeriod = warrantyPeriod;
 }
 
 public String getNameOfTheManufacturer() {
@@ -54,12 +54,12 @@ public void setMemoryCapacity(double memoryCapacity) {
 	this.memoryCapacity = memoryCapacity;
 }
 
-public int getMultiplicity_of_zoom() {
-	return multiplicity_of_zoom;
+public int getMultiplicityOfZoom() {
+	return multiplicityOfZoom;
 }
 
-public void setMultiplicity_of_zoom(int multiplicity_of_zoom) {
-	this.multiplicity_of_zoom =multiplicity_of_zoom;
+public void setMultiplicityOfZoom(int multiplicityOfZoom) {
+	this.multiplicityOfZoom =multiplicityOfZoom;
 }
 
 public int getColor() {
@@ -78,31 +78,31 @@ public void setPrice(int price) {
 	this.price = price;
 }
 
-public int getBattery_capacity() {
-    return battery_capacity;
+public int getBatteryCapacity() {
+    return batteryCapacity;
 }
 
-public void setBattery_capacity(int battery_capacity) {
-    this.battery_capacity = battery_capacity;
+public void setBatteryCapacity(int batteryCapacity) {
+    this.batteryCapacity = batteryCapacity;
 }
  
-public int getWarranty_period() {
-    return warranty_period;
+public int getWarrantyPeriod() {
+    return warrantyPeriod;
 }
  
-public void setWarranty_period(int warranty_period) {
-    this.warranty_period = warranty_period;
+public void setWarrantyPeriod(int warrantyPeriod) {
+    this.warrantyPeriod = warrantyPeriod;
 }
 
 public String toString() {
 	String info = "\n ********************";
 	info += "\n Name Of The Manufacturer: "+ NameOfTheManufacturer;
 	info += "\n Memory Capacity: "+ memoryCapacity;
-	info += "\n Multiplicity of zoom: "+ multiplicity_of_zoom;
+	info += "\n Multiplicity of zoom: "+ multiplicityOfZoom;
 	info += "\n Color: "+ color;
 	info += "\n Price: "+ price;
-	info += "\n Battery Capacity: "+ battery_capacity;
-	info += "\n Warranty Period: "+ warranty_period;
+	info += "\n Battery Capacity: "+ batteryCapacity;
+	info += "\n Warranty Period: "+ warrantyPeriod;
 	return info;
 	
 }
@@ -117,14 +117,14 @@ public int printID() {
     return ID;
 }
 
-public void resetValues(String NameOfTheManufacturer, double memoryCapacity, int multiplicity_of_zoom, int color, int price, int battery_capacity, int warranty_period) {
+public void resetValues(String NameOfTheManufacturer, double memoryCapacity, int multiplicityOfZoom, int color, int price, int batteryCapacity, int warrantyPeriod) {
 	this.NameOfTheManufacturer = NameOfTheManufacturer;
     this.memoryCapacity = memoryCapacity;
-    this.multiplicity_of_zoom = multiplicity_of_zoom;
+    this.multiplicityOfZoom = multiplicityOfZoom;
     this.color = color;
     this.price = price;
-    this.battery_capacity = battery_capacity;
-    this.warranty_period = warranty_period;
+    this.batteryCapacity = batteryCapacity;
+    this.warrantyPeriod = warrantyPeriod;
 }
 }
 
